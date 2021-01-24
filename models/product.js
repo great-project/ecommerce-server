@@ -38,6 +38,10 @@ module.exports = (sequelize, DataTypes) => {
             args: [0],
             msg: "Price must be 0 or more",
           },
+          isInt: {
+            args: true,
+            msg: "Stock must be a number",
+          },
         },
       },
       stock: {
@@ -53,7 +57,7 @@ module.exports = (sequelize, DataTypes) => {
           },
           isInt: {
             args: true,
-            msg: "Stock must be an integer",
+            msg: "Stock must be a number",
           },
         },
       },
